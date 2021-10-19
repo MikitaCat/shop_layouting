@@ -7,6 +7,35 @@ $light-gray: #f4f4f4;
 $dark-gray: #8d8d8d;
 $red: #d84033;
 
+//Page
 .page-light {
   background-color: $light;
+}
+
+//Wrapper
+.wrappwer {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+//Header
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+
+  &-item {
+    margin-left: 52px;
+  }
+
+  &-link {
+    color: $dark;
+    text-decoration: none;
+  }
 }

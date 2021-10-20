@@ -2,9 +2,13 @@
   background-color: #f9f6f1;
 }
 
-.wrappwer {
+.wrapper {
   max-width: 1110px;
   margin: 0 auto;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -34,5 +38,26 @@
 .nav-link {
   color: #212121;
   text-decoration: none;
+}
+
+.cart {
+  background-image: url(../img/cart.svg);
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding-left: 45px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.cart-count {
+  background-image: url(../img/cart-counter.svg);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  color: white;
+  font-size: 12px;
+  font-weight: 700px;
+  padding: 10px 24px;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

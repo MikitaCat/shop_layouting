@@ -2,6 +2,10 @@
   background-color: #f9f6f1;
 }
 
+.page-dark {
+  background-color: #212121;
+}
+
 .wrapper {
   max-width: 1110px;
   margin: 0 auto;
@@ -122,5 +126,18 @@ body {
   font-weight: 700;
   color: #d84033;
   margin-top: 17px;
+}
+
+.notice {
+  text-align: center;
+}
+
+.notice-title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.notice-title span {
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,8 +8,14 @@ $dark-gray: #8d8d8d;
 $red: #d84033;
 
 //Page
-.page-light {
-  background-color: $light;
+.page {
+  &-light {
+    background-color: $light;
+  }
+
+  &-dark {
+    background-color: $dark;
+  }
 }
 
 //Wrapper
@@ -121,6 +127,18 @@ body {
       font-weight: 700;
       color: $red;
       margin-top: 17px;
+    }
+  }
+}
+
+//Third Block
+.notice {
+  text-align: center;
+  &-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    span {
+      font-weight: 700;
     }
   }
 }

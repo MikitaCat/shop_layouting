@@ -86,12 +86,18 @@ body {
     color: $dark;
     text-decoration: none;
   }
+
+  &-info {
+    .nav-item {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
 }
 
 .cart {
   background-image: url(../img/cart.svg);
   display: block;
-  width: 30px;
   height: 30px;
   padding-left: 45px;
   background-repeat: no-repeat;
@@ -151,6 +157,11 @@ body {
       font-weight: 700;
       color: $red;
       margin-top: 17px;
+    }
+
+    &-image {
+      width: 100%;
+      max-width: 556px;
     }
   }
 }

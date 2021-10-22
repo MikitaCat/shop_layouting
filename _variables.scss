@@ -8,7 +8,7 @@ $dark-gray: #8d8d8d;
 $red: #d84033;
 
 //Breackpoints
-@mixin breackpoint($point) {
+@mixin breakpoint($point) {
   @if $point == lg {
     @media (max-width: 992px) {
       @content;
@@ -22,7 +22,11 @@ $red: #d84033;
       @content;
     }
   } @else if $point == xs {
-    @media (max-width: 320px) {
+    @media (max-width: 500px) {
+      @content;
+    }
+  } @else if $point == minlg {
+    @media (min-width: 993px) {
       @content;
     }
   }

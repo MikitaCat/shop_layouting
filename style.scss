@@ -70,6 +70,7 @@ body {
   display: flex;
   list-style-type: none;
   padding-left: 0;
+  font-size: 14px;
 
   &-item {
     margin-right: 52px;
@@ -92,9 +93,12 @@ body {
   background-image: url(../img/cart.svg);
   display: block;
   height: 30px;
-  padding-left: 45px;
+  padding-left: 43px;
+  padding-right: 0;
   background-repeat: no-repeat;
   background-position: 0 center;
+  border: none;
+  outline: none;
   &-count {
     background-image: url(../img/cart-counter.svg);
     background-repeat: no-repeat;
@@ -102,7 +106,7 @@ body {
     color: white;
     font-size: 12px;
     font-weight: 700px;
-    padding: 10px 24px;
+    padding: 10px 17px 10px 23px;
     display: block;
   }
 }
@@ -151,11 +155,11 @@ body {
       color: $red;
       margin-top: 17px;
     }
+  }
 
-    &-image {
-      width: 100%;
-      max-width: 556px;
-    }
+  &-image {
+    width: 100%;
+    max-width: 556px;
   }
 }
 
@@ -182,12 +186,19 @@ body {
 .collection {
   display: flex;
   justify-content: space-between;
+  @include breakpoint(lg) {
+    flex-wrap: wrap;
+  }
   &-item {
     flex: 0 0 50%;
     padding: 43px 0 63px;
     background-repeat: no-repeat;
     background-position: calc(100% - 37px) bottom;
     background-size: 190px 171px;
+
+    @include breakpoint(lg) {
+      flex: 0 0 100%;
+    }
   }
 
   &-men {
